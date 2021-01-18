@@ -1,0 +1,40 @@
+.profile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-image: url(../images/cloud.gif);
+    padding: 20px;
+    margin: 50px;
+    opacity: 0.5;
+
+}
+
+p {
+    color: black;
+    line-height: 20px;
+}
+
+h4 {
+    color: black;
+    font-size: 30px;
+}
+
+.bp-profile {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.view-more {
+    border-radius: 20px;
+    border: none;
+    color: black;
+    background-color: pink;
+    padding: 5px;
+}
+
+.view-more:hover {
+    cursor: pointer;
+    background-color: palevioletred;
+}

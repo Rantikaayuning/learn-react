@@ -1,25 +1,42 @@
-import logo from './logo.svg';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import AboutMe from './pages/AboutMe/index';
+import BPCard from './pages/BPCard/index';
+import Home from './pages/Home/index';
+import Navbar from './components/Navbar/index';
+import DetailProfile from './pages/DetailProfile/Profile';
+import RJBook from './pages/RJCard/index';
+import Contributor from './pages/Contributor';
+// import Card3 from './components/Card/card3';
 import './App.css';
+import 'antd/dist/antd.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+          <Router>
+            <Navbar />
+              <Switch>
+                <Route path='/' exact>
+                  <Home />
+                </Route>
+                <Router path='/bp-card'>
+                  <BPCard />
+                </Router>
+                <Router path='/about-me'>
+                  <AboutMe />
+                </Router>
+                <Router path='/rj-card'>
+                  <RJBook />
+                </Router>
+                <Route path='/detail-profile/:id'>
+                  <DetailProfile />
+                </Route>
+                <Route path='/contributor'>
+                  <Contributor />
+                </Route>
+              </Switch>
+          </Router>
   );
 }
 
 export default App;
+

@@ -1,0 +1,89 @@
+.container {
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  background-image: url(../images/abstrak2.jpg);
+  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.kotak {
+  width: 400px;
+  height: 400px;
+  background-image: url(../images/geometric-leaves.png);
+  border-radius: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  line-height: 5px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  opacity: 0.3;
+}
+
+.button {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+
+.buttonMe {
+  text-align: center;
+  color: azure;
+  padding: 10px;
+}
+
+.aboutMe {
+  text-align: center;
+}
+
+h2, h3 {
+  color: rgb(91, 94, 91);
+  line-height: 10px;
+}
+
+.container p {
+  font-size: 13px;
+  line-height: 10px;
+}
+
+.gambar {
+  display: flex;
+  margin: auto;
+  width: 400px;
+  height: 150px;
+  justify-content: space-around;
+}
+
+.kotak .gambar #foto {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  opacity: 0;
+  margin-top: 20px;
+}
+
+.kotak .gambar #bintang {
+  transition: all 5s linear;
+  width: 50px;
+  height: 50px;
+  margin: 30px;
+}
+
+.container .kotak .bio {
+  margin-bottom: 10px;
+}
+
+.container:hover #bintang {
+  transform: rotate(720deg);
+}
+
+.container:hover #foto {
+  opacity: 1;
+}
+
+.container:hover .kotak {
+  opacity: 1;
+}

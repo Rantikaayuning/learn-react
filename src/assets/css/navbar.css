@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: left;
+    flex-direction: row-reverse;
+    background-color: grey;
+    opacity: 0.6;
+    padding: 20px;
+    width: 1280px;
+}
+  
+.part {
+    padding: 20px;
+    color: white;
+}
+
+.container-satu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    width: max-content;
+}
+  
