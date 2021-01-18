@@ -15,7 +15,7 @@ const Card = ({ name, image, stageName, id }) => {
             <h3>{name}</h3>
             <img src={image} alt={name}/>
             <p>Known as {stageName}</p>
-            <Link to={`/detail-profile/${id}`}>
+            <Link to={`/detail-profile/${id}`} onClick={handleClick}>
                 <p className='view-more' >View More</p>
             </Link>
             </div>
