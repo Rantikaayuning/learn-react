@@ -6,37 +6,26 @@ import Navbar from './components/Navbar/index';
 import DetailProfile from './pages/DetailProfile/Profile';
 import RJBook from './pages/RJCard/index';
 import Contributor from './pages/Contributor';
-// import Card3 from './components/Card/card3';
 import './App.css';
 import 'antd/dist/antd.css';
+import ContributorDetail from './pages/DetailContributor';
 
 function App() {
   return (
           <Router>
             <Navbar />
               <Switch>
-                <Route path='/' exact>
-                  <Home />
-                </Route>
-                <Router path='/bp-card'>
-                  <BPCard />
-                </Router>
-                <Router path='/about-me'>
-                  <AboutMe />
-                </Router>
-                <Router path='/rj-card'>
-                  <RJBook />
-                </Router>
-                <Route path='/detail-profile/:id'>
-                  <DetailProfile />
-                </Route>
-                <Route path='/contributor'>
-                  <Contributor />
-                </Route>
+                <Route path='/' exact component={Home}/>
+                <Route path='/bp-card' component={BPCard}/>
+                <Route path='/about-me' component={AboutMe}/>
+                <Route path='/rj-card' component={RJBook}/>
+                <Route path='/detail-profile/:id' component={DetailProfile}/>
+                <Route path='/contributor' component={Contributor}/>
+                <Route path='/contributor-detail/:id' component={ContributorDetail}/>
               </Switch>
           </Router>
-  );
-}
+      );
+    }
 
 export default App;
 

@@ -2,7 +2,7 @@
   width: 500px;
   height: 500px;
   margin: 50px auto;
-  background-image: url(../images/abstrak2.jpg);
+  background-image: url(../images/nature3.jpg);
   opacity: 0.8;
   display: flex;
   flex-direction: column;
@@ -12,7 +12,7 @@
 .kotak {
   width: 400px;
   height: 400px;
-  background-image: url(../images/geometric-leaves.png);
+  background-image: url(../images/nature3.jpg);
   border-radius: 20px;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
@@ -20,7 +20,7 @@
   margin: auto;
   display: flex;
   flex-direction: column;
-  opacity: 0.3;
+  opacity: 0.2;
 }
 
 .button {

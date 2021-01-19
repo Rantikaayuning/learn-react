@@ -53,6 +53,7 @@ ul li {
 .card-box {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .card-box img {
@@ -74,6 +75,10 @@ ul {
   opacity: 0.8;
   text-align: center;
   margin: 15px;
+}
+
+.card2 img {
+  width: 150px;
 }
 
 .food {
@@ -131,8 +136,9 @@ ul {
 
 h1 {
   text-align: center;
-  color: rgb(250, 19, 192);
+  color: rgb(60, 81, 100);
   font-family: cursive;
+  margin-top: 50px;
 }
 
 h3 {
@@ -150,22 +156,40 @@ h3 {
   flex-wrap: wrap;
 }
 
-.card3 {
+.contributor {
   display: flex;
   flex-direction: row; 
   text-align: center;
   margin: 20px;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
-.card3 p {
+.contributor p {
   color: aliceblue;
 }
 
-.card3 li {
+.contributor li {
   list-style: none;
 }
 
-.card3 img {
+.contributor img {
   width: 200px;
+  margin-top: 50px;
+}
+
+.detail-contributor {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  background-color:rgb(201, 201, 248);
+  padding: 10px;
+  margin: 100px;
+  opacity: 0.8;
+}
+
+.detail-contributor p {
+  color: aliceblue;
+  font-size: 20px;
 }
