@@ -6,17 +6,25 @@ import { USER_API } from '../../utility/constant';
 
 const ContributorDetail = () => {
     const [ user, setUser] = useState([]);
+    const [ total, setTotal] = useState([0]);
+
     const { id } = useParams();
 
     useEffect(() => {
         const getData = async() => {
             const result = await axios(USER_API + id);
             setUser(result.data.data);
-        }
+        };
+        const getTotal = async() => {
+            const result = await axios(USER_API);
+            setTotal(result.data.total);
+        };
         getData();
+        getTotal();
     }, [id]);
 
-    console.log(user);
+    const prevID = (user.id === 1 ? total : user.id - 1);
+    const nextID = (user.id === total ? 1 : user.id + 1)
 
     return (      
         <>
@@ -25,10 +33,10 @@ const ContributorDetail = () => {
            <p><img src={user.avatar} alt={user.first_name}/></p>
            <p>{user.email}</p>
            <p>
-           <Link to={`/contributor-detail/${user.id - 1}`}>
+           <Link to={`./${prevID}`}>
                 <button className='view-more' >Prev</button>
             </Link>
-           <Link to={`/contributor-detail/${user.id + 1}`}>
+            <Link to={`./${nextID}`}>
                 <button className='view-more' >Next</button>
             </Link>
             </p>

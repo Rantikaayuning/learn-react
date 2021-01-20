@@ -29,12 +29,12 @@ h4 {
 .view-more {
     border-radius: 20px;
     border: none;
-    color: black;
-    background-color: pink;
+    color: aliceblue;
+    background-color: rgb(139, 197, 236);
     padding: 5px;
 }
 
 .view-more:hover {
     cursor: pointer;
-    background-color: palevioletred;
+    background-color: rgb(98, 179, 233);
 }
