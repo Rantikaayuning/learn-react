@@ -27,21 +27,21 @@ const ContributorDetail = () => {
     const nextID = (user.id === total ? 1 : user.id + 1)
 
     return (      
-        <>
-        <div className='detail-contributor'>
-           <p>{user.first_name} {user.last_name}</p>
-           <p><img src={user.avatar} alt={user.first_name}/></p>
-           <p>{user.email}</p>
-           <p>
-           <Link to={`./${prevID}`}>
-                <button className='view-more' >Prev</button>
-            </Link>
-            <Link to={`./${nextID}`}>
-                <button className='view-more' >Next</button>
-            </Link>
-            </p>
+        <div className='detail-box'>
+            <div className='detail-contributor'>
+                <p>{user.first_name} {user.last_name}</p>
+                <p><img src={user.avatar} alt={user.first_name}/></p>
+                <p>{user.email}</p>
+                <p>
+                <Link to={`./${prevID}`}>
+                        <button className='view-more' >Prev</button>
+                </Link>
+                <Link to={`./${nextID}`}>
+                    <button className='view-more' >Next</button>
+                </Link>
+                </p>
+            </div>
         </div>
-        </>
     )
 }
 

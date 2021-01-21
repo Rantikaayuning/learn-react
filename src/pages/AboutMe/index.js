@@ -1,7 +1,7 @@
 import React from 'react';
 import gambar from '../../assets/images/me2020.jpg';
 import bintang from '../../assets/images/bintang.png';
-import '../../assets/css/content.css';
+import '../../assets/css/about.css';
 import 'antd/dist/antd.css';
 import { Button } from 'antd';
 import { GitlabFilled, InstagramFilled , GithubFilled, LinkedinFilled } from '@ant-design/icons';

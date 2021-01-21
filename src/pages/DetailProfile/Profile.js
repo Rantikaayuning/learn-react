@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { BPName } from "../../utility/Api";
-import '../../assets/css/profile.css';
+import '../../assets/css/detail.css';
 import BackButton from "../../components/BackButton";
 
 function DetailProfile() {
@@ -13,8 +13,8 @@ function DetailProfile() {
         <p>{BPName[id].birthday}</p>
         <p>{BPName[id].bio}</p>
         <p><BackButton /></p>
-      </div>   
-  );
-};
+      </div>
+    );
+  };
 
 export default DetailProfile;

@@ -2,3 +2,17 @@ body {
   background-image: url(./assets/images/snowhouse2.jpg);
   background-size: cover;
 }
+
+.welcome {
+  font-size: 50px;
+  padding: 200px;
+  color: white;
+  opacity: 0.5;
+  font-family: cursive, Tahoma, sans-serif;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
